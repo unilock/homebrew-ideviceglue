@@ -10,7 +10,6 @@ class LibusbmuxdGit < Formula
   depends_on "libtool" => :build
   depends_on "pkg-config" => :build
 
-  # Only future versions require this lib, so do not treat it as a main dependency yet
   depends_on "libimobiledevice-glue-git"
 
   depends_on "libplist-git"
