@@ -11,6 +11,7 @@ class IdevicerestoreGit < Formula
 
   depends_on "libimobiledevice-glue-git"
 
+  depends_on "curl"
   depends_on "libirecovery-git"
   depends_on "libplist-git"
   depends_on "libzip"
