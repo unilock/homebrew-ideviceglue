@@ -9,9 +9,10 @@ class IdeviceinstallerGit < Formula
   depends_on "libtool" => :build
   depends_on "pkg-config" => :build
 
+  depends_on "libzip"
+
   depends_on "libimobiledevice-git"
   depends_on "libplist-git"
-  depends_on "libzip"
 
   def install
     system "./autogen.sh" if build.head?

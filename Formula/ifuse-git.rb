@@ -10,6 +10,7 @@ class IfuseGit < Formula
   depends_on "pkg-config" => :build
 
   depends_on "glib"
+
   depends_on "libimobiledevice-git"
   depends_on "libplist-git"
 

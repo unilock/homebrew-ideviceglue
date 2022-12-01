@@ -9,12 +9,13 @@ class LibimobiledeviceGit < Formula
   depends_on "libtool" => :build
   depends_on "pkg-config" => :build
 
+  depends_on "libtasn1"
+  depends_on "openssl@1.1"
+
   depends_on "libimobiledevice-glue-git"
 
   depends_on "libplist-git"
-  depends_on "libtasn1"
   depends_on "libusbmuxd-git"
-  depends_on "openssl@1.1"
 
   def install
     system "./autogen.sh" if build.head?

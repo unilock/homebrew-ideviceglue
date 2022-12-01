@@ -10,10 +10,10 @@ class LibusbmuxdGit < Formula
   depends_on "libtool" => :build
   depends_on "pkg-config" => :build
 
-  depends_on "libimobiledevice-glue-git"
-
-  depends_on "libplist-git"
   depends_on "libusb"
+
+  depends_on "libimobiledevice-glue-git"
+  depends_on "libplist-git"
 
   uses_from_macos "netcat" => :test
 

@@ -9,10 +9,10 @@ class LibirecoveryGit < Formula
   depends_on "libtool" => :build
   depends_on "pkg-config" => :build
 
-  depends_on "libimobiledevice-glue-git"
-
   depends_on "libusb"
   depends_on "readline"
+
+  depends_on "libimobiledevice-glue-git"
 
   def install
     system "./autogen.sh" if build.head?

@@ -9,12 +9,14 @@ class IdevicerestoreGit < Formula
   depends_on "libtool" => :build
   depends_on "pkg-config" => :build
 
+  depends_on "curl"
+  depends_on "libzip"
+
   depends_on "libimobiledevice-glue-git"
 
-  depends_on "curl"
+  depends_on "libimobiledevice-git"
   depends_on "libirecovery-git"
   depends_on "libplist-git"
-  depends_on "libzip"
 
   def install
     system "./autogen.sh", "--disable-debug",
